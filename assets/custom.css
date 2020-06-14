@@ -1,0 +1,1767 @@
+/* Media Breakpoints below here*/
+/*
+https://gist.github.com/needim/d15fdc2ac133d8078f7c
+
+ SHORTCUT LINK goo.gl/aLnHfZ
+
+
+  Based on:
+  1. http://stephen.io/mediaqueries
+  2. https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+*/
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* @media all and (max-width: 1439px) {
+
+} */
+
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  header .headerContainer {
+      display: block;
+  }
+
+  header .mobileHeaderContainer{
+    display: none;
+  }
+
+  main .topMainSectionContainer {
+    width: 95%;
+    display: inline-block;
+  }
+
+  header .headerContainer .navLinkContainer {
+    width: 100%;
+  }
+
+  header .headerContainer .navLinkContainer .menuListContainer {
+    margin: 0 6%;
+
+  }
+
+  main .topMainSectionContainer .firstRowContainer {
+    width: 100%;
+  }
+
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer {
+    width: 66%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer img {
+    width: 55%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent {
+    width: 45%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent h1 {
+    font-size: 1.5vw;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent p {
+    font-size: 1.5vw;
+    margin: 28px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .publishedTimeContainer {
+    font-size: 0.9vw;
+    position: initial;
+    bottom: initial;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .editorContainer {
+    font-size: 0.9vw;
+    position: initial;
+    bottom: initial;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer {
+    width: 32%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent img {
+    width: 26%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails {
+    width: 74%;
+    display: inline-block;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails h3 {
+    font-size: 1vw;
+}
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent {
+    margin-bottom: 8.4px;
+  }
+
+  main .topMainSectionContainer .secondRowContainer {
+    width: 100%;
+}
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer {
+    width: 66%;
+    display: inline-block;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .topHeaderOne {
+    width: 60%;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .bottomHeaderOne {
+    width: 82%;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer {
+    width: 32%;
+    text-align: center;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer a {
+    width: 49%;
+    font-size: 1.4vw;
+    padding: 12px;
+    margin-bottom: 11px;
+  }
+
+  main .gallerySectionContainer {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer {
+    width: 30%;
+    height: auto;
+    margin: 0 14px;
+    margin-bottom: 16px;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer h3 {
+    width: 100%;
+    font-size: 1.5vw;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer .galleryContnetParagraph {
+    width: 100%;
+    font-size: 1.2vw;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .publishedDetailsContainer {
+    position: initial;
+    bottom: initial;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .publishedDetailsContainer .publishedTime {
+    font-size: 0.9vw;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .publishedDetailsContainer .publisherName {
+    font-size: 0.9vw;
+
+  }
+
+  main .resourceContainer h2 {
+    width: 95%;
+  }
+
+  main .resourceContainer .resourceContentContainer {
+    width: 100%;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent {
+    width: 22%;
+    box-shadow: none;
+    margin: 0 12px;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent h3 {
+    font-size: 1.2vw;
+    top: 70%;
+    transform: translate(-50%, 0);
+  }
+
+  main .projectContainer h2 {
+    width: 95%;
+  }
+
+  main .projectContainer .projectContentContainer {
+    width: 100%;
+    display: inline-block;
+    margin: 16px 0;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent {
+    width: 18%;
+    height: auto;
+    margin: 0 6px;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent img {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent h4 {
+    padding-left: 0;
+    text-align: center;
+    font-size: 0.9vw;
+  }
+
+  main .videoContainer h2 {
+    width: 95%;
+  }
+
+  main .videoContainer .videoContentContainer {
+    width: 100%;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent {
+      width: 22%;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent {
+    width: 22%;
+    margin: 0 12px;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent h3 {
+    font-size: 1.2vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer {
+    width: 30%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent img {
+    width: 50%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails {
+    width: 50%;
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails h3 {
+    font-size: 1.1vw;
+
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails p {
+    font-size: 0.8vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer {
+    width: 30%;
+    margin: 0 28px;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent img {
+    width: 50%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails {
+    width: 50%;
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails h3 {
+    font-size: 1.1vw;
+
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails p {
+    font-size: 0.8vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer {
+    width: 30%;
+
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent img {
+    width: 50%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails {
+    width: 50%;
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails h3 {
+    font-size: 1.1vw;
+
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails p {
+    font-size: 0.8vw;
+  }
+
+  footer .footerContainer .footerMenuContainer ul {
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 901px) and (max-width: 1280px) {
+  header .headerContainer {
+      display: none;
+  }
+
+  header .mobileHeaderContainer{
+    display: block;
+  }
+
+  header .mobileHeaderContainer .mobileNavMenuContainer .mobileNavMenuButtonContainer button {
+    font-size: small;
+  }
+
+  main .topMainSectionContainer {
+    margin: 8px 0;
+    padding-top: 166px !important;
+  }
+
+  main .topMainSectionContainer .firstRowContainer {
+    width: 95%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer {
+    width: 62%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer img {
+    width: 60%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent {
+    width: 40%;
+    height: 22vh;
+    padding: 0 2px;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent h1 {
+    font-size: 1.5vw;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent p {
+    font-size: 1.4vw;
+    margin: 8% 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .publishedTimeContainer {
+    font-size: 1vw;
+    position: initial;
+    bottom: initial;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .editorContainer {
+    font-size: 1vw;
+    position: initial;
+    bottom: initial;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer {
+    width: 36%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent img {
+    width: 24%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent .UpdateBoxContainer p {
+    font-size: 0.7vw;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails {
+    width: 68%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails h3 {
+    font-size: 1.2vw;
+  }
+
+  main .topMainSectionContainer .secondRowContainer {
+    width: 95%;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer {
+    width: 62%;
+    padding: 12px 0;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer {
+    width: 38%;
+    text-align: right;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .topHeaderOne {
+    width: 68%;
+    font-size: 3vw;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .bottomHeaderOne {
+    width: 94%;
+    font-size: 3vw;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer a {
+    width: 47%;
+    font-size: 1.5vw;
+    padding: 14px;
+    margin-bottom: 6px;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent {
+    width: initial;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer {
+    width: 31%;
+    height: auto;
+    margin: 8px 6px;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer {
+    padding: 4px;
+    width: 100%;
+    height: auto;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer h3 {
+    width: 100%;
+    font-size: 1.5vw;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer .galleryContnetParagraph {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .publishedDetailsContainer {
+    position: initial;
+    bottom: initial;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer .galleryContnetParagraph {
+    width: 100%;
+    font-size: 1.2vw;
+    margin: 32px 0;
+  }
+
+  main .resourceContainer h2 {
+    width: 95%;
+  }
+
+  main .resourceContainer .resourceContentContainer {
+    width: 100%;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent {
+    width: 22%;
+    height: auto;
+    box-shadow: none;
+    margin: 0px 12px;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent h3 {
+    top: 65%;
+    transform: translate(-50%, 0%);
+  }
+
+  main .projectContainer h2 {
+    width: 95%;
+  }
+
+  main .projectContainer .projectContentContainer {
+    width: 100%;
+  }
+
+  main .projectContainer .projectContentContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent {
+    width: 18%;
+    margin: 0 5px;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent img {
+    width: 100%;
+  }
+
+  main .videoContainer h2 {
+    width: 95%;
+  }
+
+  main .videoContainer .videoContentContainer {
+    width: 98%;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent {
+    width: 23%;
+    box-shadow: none;
+    margin: 0 8px;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent h3 {
+    width: 100%;
+    font-size: 1.3vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent {
+    width: 98%;
+    text-align: center;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer {
+    width: 32%;
+    margin: 0;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent img {
+    width: 55%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails h3 {
+    font-size: 1.2vw;
+    margin-bottom: 8px;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails p {
+    font-size: 0.9vw;
+    position: inherit;
+    bottom: inherit;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer {
+    width: 32%;
+    margin: 0 4px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent img {
+    width: 55%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails h3 {
+    font-size: 1.2vw;
+    margin-bottom: 8px;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails p {
+    font-size: 0.9vw;
+    position: inherit;
+    bottom: inherit;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer {
+    width: 32%;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent img {
+    width: 55%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails h3 {
+    font-size: 1.2vw;
+    margin-bottom: 8px;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails p {
+    font-size: 0.9vw;
+    position: inherit;
+    bottom: inherit;
+  }
+
+  footer .footerContainer .footerMenuContainer {
+    text-align: left;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 900px) {
+  header .headerContainer {
+    display: none;
+  }
+
+  header .mobileHeaderContainer{
+    display: block;
+  }
+
+  header .mobileHeaderContainer .logoContainer h1 {
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  header .mobileHeaderContainer .logoContainer p {
+    width: 186px;
+    font-size: 14px;
+  }
+
+  header .mobileHeaderContainer .mobileNavMenuContainer .mobileNavMenuButtonContainer button {
+    font-size: small;
+  }
+
+  main .topMainSectionContainer {
+    padding-top: 160px !important;
+
+  }
+
+  main .gallerySectionContainer {
+    width: 100%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer {
+    width: 95%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent {
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent p {
+    margin: 16px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .publishedTimeContainer {
+    position: initial;
+    bottom: initial;
+    display: inline-block;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .editorContainer {
+    position: initial;
+    bottom: initial;
+    display: inline-block;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent h3 {
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  main .topMainSectionContainer .secondRowContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer {
+    width: 95%;
+    float: none;
+    display: inline-block;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer {
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer a {
+    width: 47%;
+    font-size: 32px;
+    margin: 0 2px;
+    margin-bottom: 8px;
+    padding: 12px;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent {
+    width: 95%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer {
+    height: auto;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer h3 {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer .galleryContnetParagraph {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .publishedDetailsContainer {
+    position: initial;
+    bottom: initial;
+    padding: 4px;
+  }
+
+  main .resourceContainer h2 {
+    width: 95%;
+  }
+
+  main .resourceContainer .resourceContentContainer {
+    width: 95%;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent h3 {
+    font-size: 24px;
+    top: 170%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  main .projectContainer h2 {
+    width: 95%;
+  }
+
+  main .projectContainer .projectContentContainer {
+    width: 95%;
+    margin: 0;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent {
+    width: 100%;
+    height: auto;
+    margin: 16px 0;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .videoContainer h2 {
+    width: 95%;
+  }
+
+  main .videoContainer .videoContentContainer {
+    width: 95%;
+    margin: 16px 0;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent h3 {
+    margin-bottom: 16px;
+
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent {
+    width: 95%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails p {
+    position: initial;
+    bottom: initial;
+    margin: 8px 0;
+  }
+
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails {
+    width: 100%;
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails p {
+    position: initial;
+    bottom: initial;
+    margin: 8px 0;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails {
+    width: 100%;
+    display: inline-block;
+    padding: 0 6px;
+    vertical-align: top;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails p {
+    position: initial;
+    bottom: initial;
+    margin: 8px 0;
+  }
+
+  footer .footerContainer .footerMenuContainer {
+    width: 95%;
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 375px) and (max-width: 736px) {
+  header .headerContainer{
+    display: none;
+  }
+
+  header .mobileHeaderContainer{
+    display: block;
+  }
+
+  header .headerContainer .subHeaderContainer {
+      display: none;
+  }
+
+  header .mobileHeaderContainer .logoContainer {
+    margin:0;
+  }
+
+  header .mobileHeaderContainer .logoContainer img {
+    width: 50px;
+    height: 50px;
+  }
+
+  header .mobileHeaderContainer .logoContainer h1 {
+    font-size: 32px;
+  }
+
+  header .mobileHeaderContainer .logoContainer p {
+    width: 106px;
+    font-size: 8px;
+  }
+
+  header .headerContainer .navLinkContainer{
+    display: none;
+  }
+
+  main .topMainSectionContainer {
+    padding-top: 85px !important;
+  }
+
+  main .topMainSectionContainer .firstRowContainer {
+    width: 95%;
+    text-align: center;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer {
+    width: 100%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent {
+    width: 100%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent p {
+    margin: 16px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .publishedTimeContainer {
+    position: inherit;
+    bottom: inherit;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .headlineContainer .headlineDetailsContent .editorContainer {
+    position: inherit;
+    bottom: inherit;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent h3 {
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  main .topMainSectionContainer .secondRowContainer {
+    width: 95%;
+    margin: 0;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer {
+    width: 100%;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .topHeaderOne {
+    width: 60%;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .posterContainer .bottomHeaderOne {
+    width: 90%;
+    font-size: 4vw;
+    font-weight: bold;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  main .topMainSectionContainer .secondRowContainer .buttonsContainer a {
+    width: 49%;
+    font-size: 4vw;
+  }
+
+  main .gallerySectionContainer {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent {
+    width: 94%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer h3 {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer .galleryContentDetailsContainer .galleryContnetParagraph {
+    width: 100%;
+  }
+
+  main .gallerySectionContainer .gallerySectionContent .galleryContentContainer {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  main .resourceContainer {
+    width: 100%;
+  }
+
+  main .resourceContainer h2 {
+    width: 95%;
+  }
+
+  main .resourceContainer .resourceContentContainer {
+    margin: 0;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent {
+    width: 95%;
+    margin: 16px 0;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .resourceContainer .resourceContentContainer .resourceContent h3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+
+  main .projectContainer h2 {
+      width: 95%;
+  }
+
+  main .projectContainer .projectContentContainer {
+    width: 95%;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent {
+    width: 100%;
+    height: auto;
+    margin: 0 0;
+    margin-bottom: 16px;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .projectContainer .projectContentContainer .projectContent h4 {
+    text-align: left;
+  }
+
+  main .videoContainer h2 {
+    width: 95%;
+  }
+
+  main .videoContainer .videoContentContainer {
+    width: 95%;
+    display: inline-block;
+    margin: 16px 0;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent {
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  main .videoContainer .videoContentContainer .videoContent img {
+    width: 100%;
+    height: auto;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent {
+    width: 95%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails h3 {
+    font-size: 3vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .mostReadContainer .mostReadContent .mostReadContentDetails p {
+    font-size: 2.5vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer h2 {
+    width: 95%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails h3 {
+    font-size: 3vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .featureContainer .featureContent .featureContentDetails p {
+    font-size: 2.5vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent {
+    width: 100%;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails h3 {
+    font-size: 3vw;
+  }
+
+  main .bottomMainSectionContainer .bottomMainSectionContent .fromMembersContainer .fromMembersContent .fromMembersContentDetails p {
+    font-size: 2.5vw;
+  }
+
+  footer .footerContainer {
+    padding: 16px 0;
+  }
+
+  footer .footerContainer .footerMenuContainer ul {
+    text-align: -webkit-center;
+  }
+
+  footer .footerContainer .footerMenuContainer {
+    width: 100%;
+  }
+
+  footer .footerContainer .footerSubcribtionContainer a {
+    font-size: 4vw;
+  }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+
+}
+
+/* All small mobile devices in portrait */
+@media only screen and (max-width:747px) and (orientation:portrait){
+
+
+} /* DO NOT DELETE - Breakpoint End */
+
+/* All small mobile devices in landscape */
+@media only screen and (max-width:747px) and (orientation:landscape){
+
+}
+/*iPhone X*/
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+}
+
+/*iPhone X devices in portrait*/
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+	and (orientation:portrait) {
+}
+
+/* iPhone 8 devices */
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 667px)
+    and (-webkit-device-pixel-ratio : 2) {
+
+}
+
+/*iPhone 8 Plus*/
+@media only screen
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (-webkit-device-pixel-ratio : 3) {
+
+
+}
+
+/* iPhone 6 in portrait & landscape */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+
+
+}
+
+/* iPhone 6 in landscape */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : landscape) {
+
+
+}
+
+/* iPhone 6 in portrait */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+
+}
+
+/* iPhone 6 Plus in portrait & landscape */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+
+}
+
+/* iPhone 6 Plus in landscape */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+
+}
+
+/* iPhone 6 Plus in portrait */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : portrait) {
+
+}
+
+/* iPhone 5 & 5S in portrait & landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+}
+
+/* iPhone 5 & 5S in landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+}
+
+/* iPhone 5 & 5S in portrait */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+}
+
+/*
+  iPhone 2G, 3G, 4, 4S Media Queries
+  It's noteworthy that these media queries are also the same for iPod Touch generations 1-4.
+*/
+
+/* iPhone 2G-4S in portrait & landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+}
+
+/* iPhone 2G-4S in landscape */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : landscape) {
+
+}
+
+/* iPhone 2G-4S in portrait */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
+
+}
+
+/* iPad in portrait & landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+
+}
+
+/* iPad in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+
+/* iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+} /* Do not delete */
+
+/* Galaxy S3 portrait and landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+
+/* Galaxy S3 portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Galaxy S3 landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* Galaxy S4 portrait and landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Galaxy S4 portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Galaxy S4 landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* Galaxy S5 portrait and landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* Galaxy S5 portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Galaxy S5 landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/* HTC One portrait and landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+/* HTC One portrait */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* HTC One landscape */
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*
+  iPad 3 & 4 Media Queries
+  If you're looking to target only 3rd and 4th generation Retina iPads
+  (or tablets with similar resolution) to add @2x graphics,
+  or other features for the tablet's Retina display, use the following media queries.
+*/
+
+/* Retina iPad in portrait & landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Retina iPad in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Retina iPad in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/*
+  iPad 1 & 2 Media Queries
+  If you're looking to supply different graphics or choose different typography
+  for the lower resolution iPad display, the media queries below will work
+  like a charm in your responsive design!
+*/
+
+/* iPad 1 & 2 in portrait & landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* iPad 1 & 2 in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* iPad 1 & 2 in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* iPad mini in portrait & landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* iPad mini in landscape */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* iPad mini in portrait */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Galaxy Tab 10.1 portrait and landscape */
+@media
+  (min-device-width: 800px)
+  and (max-device-width: 1280px) {
+
+}
+
+/* Galaxy Tab 10.1 portrait */
+@media
+  (max-device-width: 800px)
+  and (orientation: portrait) {
+
+}
+
+/* Galaxy Tab 10.1 landscape */
+@media
+  (max-device-width: 1280px)
+  and (orientation: landscape) {
+
+}
+
+/* Asus Nexus 7 portrait and landscape */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+
+}
+
+/* Asus Nexus 7 portrait */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (orientation: portrait) {
+
+}
+
+/* Asus Nexus 7 landscape */
+@media screen
+  and (device-width: 601px)
+  and (device-height: 906px)
+  and (-webkit-min-device-pixel-ratio: 1.331)
+  and (-webkit-max-device-pixel-ratio: 1.332)
+  and (orientation: landscape) {
+
+}
+
+/* Kindle Fire HD 7" portrait and landscape */
+@media only screen
+  and (min-device-width: 800px)
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/* Kindle Fire HD 7" portrait */
+@media only screen
+  and (min-device-width: 800px)
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: portrait) {
+
+}
+
+/* Kindle Fire HD 7" landscape */
+@media only screen
+  and (min-device-width: 800px)
+  and (max-device-width: 1280px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: landscape) {
+
+}
+
+/* Kindle Fire HD 8.9" portrait and landscape */
+@media only screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
+
+/* Kindle Fire HD 8.9" portrait */
+@media only screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: portrait) {
+
+}
+
+/* Kindle Fire HD 8.9" landscape */
+@media only screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: landscape) {
+
+}
+
+/* Laptops non-retina screens */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+/* Laptops retina screens */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+}
+
+/* Apple Watch */
+@media
+  (max-device-width: 42mm)
+  and (min-device-width: 38mm) {
+
+}
+
+/* Moto 360 Watch */
+@media
+  (max-device-width: 218px)
+  and (max-device-height: 281px) {
+
+}
