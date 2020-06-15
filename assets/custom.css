@@ -347,6 +347,10 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
     font-size: 0.8vw;
   }
 
+  footer .footerContainer {
+    padding: 16px 0;
+  }
+
   footer .footerContainer .footerMenuContainer ul {
     text-align: left;
   }
@@ -667,8 +671,8 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
     bottom: inherit;
   }
 
-  footer .footerContainer .footerMenuContainer {
-    text-align: left;
+  footer .footerContainer {
+    padding: 16px 0;
   }
 }
 
@@ -752,8 +756,11 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
     height: auto;
   }
 
-  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent h3 {
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails{
     width: 100%;
+  }
+
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineContent h3 {
     display: inline-block;
     font-size: 16px;
     text-align: center;
@@ -951,6 +958,10 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
     margin: 8px 0;
   }
 
+  footer .footerContainer {
+    padding: 16px 0;
+  }
+
   footer .footerContainer .footerMenuContainer {
     width: 95%;
     text-align: left;
@@ -1053,6 +1064,10 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
     text-align: center;
   }
 
+  main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails {
+    width: 100%;
+}
+
   main .topMainSectionContainer .secondRowContainer {
     width: 95%;
     margin: 0;
@@ -1127,6 +1142,8 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
 
   main .resourceContainer .resourceContentContainer .resourceContent {
     width: 95%;
+    height: auto;
+    box-shadow: none;
     margin: 16px 0;
   }
 
@@ -1137,9 +1154,9 @@ https://gist.github.com/needim/d15fdc2ac133d8078f7c
 
   main .resourceContainer .resourceContentContainer .resourceContent h3 {
     position: absolute;
-    bottom: 0;
+    top: 70%;
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-50%, 0);
   }
 
   main .projectContainer h2 {

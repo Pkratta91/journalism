@@ -530,7 +530,7 @@ main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadl
 }
 
 main .topMainSectionContainer .firstRowContainer .subHeadlineContainer .subHeadlineDetails{
-  width: 244px
+  width: 244px;
   display: inline-block;
 }
 
